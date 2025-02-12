@@ -9,8 +9,6 @@ def load_motivational_quote():
 
 # Function to display the chat page
 def chat_page():
-    # st.title("Chat Page")
-    
     # Display a random motivational quote
     motivational_quote = load_motivational_quote()
     st.title(f"**Quote of the day :** \n {motivational_quote}")
