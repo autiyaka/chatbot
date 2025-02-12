@@ -24,7 +24,7 @@ def chat_page():
         if user_name and user_message:  # Ensure both fields are filled
             with open("chat.txt", "a") as file:  # Use append mode
                 file.write(f"{user_name}: {user_message}\n")  # Write message to file
-            st.success("Message sent!")  # Feedback to the user
+            st.success(" 👍 ")  # Feedback to the user
         else:
             st.error("Please enter both your name and message.")  # Error message
 
@@ -40,7 +40,6 @@ def chat_page():
                 if line.strip():  # Ensure the line is not empty
                     user_name, user_message = line.split(": ", 1)  # Split into user name and message
                     chat_data.append({"User Name": user_name, "User Message": user_message})  # Append to chat data
-
             st.table(chat_data) 
     except FileNotFoundError:
         st.write("No chat history found.")  # Handle case where the file does not exist
