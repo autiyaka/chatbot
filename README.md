@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# Simple Chatbot app
 
 A simple Streamlit app to leave anonymous messages - visit the site: https://dikgakgamatso.streamlit.app!
 
