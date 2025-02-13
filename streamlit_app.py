@@ -11,7 +11,7 @@ def load_motivational_quote():
 def chat_page():
     # Display a random motivational quote
     motivational_quote = load_motivational_quote()
-    st.title(f"**Quote of the day :** \n {motivational_quote}")
+    st.title(f"**Joke of the day :** \n {motivational_quote}")
     
     # Input box for leaving name and message
     user_name = st.text_input("Your name:")
